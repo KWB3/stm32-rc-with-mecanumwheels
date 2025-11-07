@@ -32,7 +32,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-//#define uart_test
+//#define uart_test					// UART 테스트용 정의, 주석제거시 활성화 uart3 사용
 #define RX_BUFFER_SIZE 100
 /* USER CODE END PTD */
 
@@ -69,7 +69,6 @@ uint8_t rxx_text[RX_BUFFER_SIZE]; // 수신 문자열 버퍼
 
 uint8_t rxx_data[NRF24L01P_PAYLOAD_LENGTH] = {127,127,127,127,127,127,127,127,127};
 uint8_t rx_flag;
-//char rxx_text[50];
 
 typedef enum {
 	PACKET_OK = 0,           // 정상 패킷
